@@ -6,6 +6,20 @@
     <link rel="shortcut icon" type="x-icon" href="./assets/icons/logo.png" />
 
     <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1fc1497e59.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
     <style>
     * {
   margin: 0;
@@ -101,14 +115,12 @@ header a:hover {
     position: absolute;
     right: 1rem;
   }
-  .drop_menu {
-    display: block;
-  }
-  .hero-text {
-    position: absolute;
-    justify-content: center;
-    text-align: center;
-  }
+.drop_menu {
+  display: none;
+}
+}
+.drop_menu.active {
+  display: block;
 }
 
 main {
@@ -140,33 +152,26 @@ footer {
 <body>
   <header>
     <div class="navbar">
-      <div class="logo">
-        <a class="logo" href="#"
-          ><img
-            src="./assets/icons/logo.png"
-            alt="Logo"
-            width="50px"
-            height="50px"
-        /></a>
-      </div>
-      <ul class="nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="bars">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+        <div class="logo">
+            <a class="logo" href="#"><img src="./assets/icons/logo.png" alt="Logo" width="50px" height="50px"></a>
+        </div>
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="bars" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
     <div class="drop_menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
     </div>
-    
-  </header>
+</header>
     <main>
         <section>
             <h2>Our Mission</h2>
@@ -216,5 +221,6 @@ footer {
         <p>&copy; 2024 Book Library. All rights reserved.</p>
       </div>
     </footer>
+    <script src="./JavaScript/script.js"></script>
 </body>
 </html>

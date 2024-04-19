@@ -92,16 +92,23 @@ header a:hover {
     position: absolute;
     right: 1rem;
   }
-  .drop_menu {
-    display: block;
-  }
+.drop_menu {
+  display: none;
+}
+
+.drop_menu.active {
+  display: block;
+}
+
   .hero-text {
     position: absolute;
     justify-content: center;
     text-align: center;
   }
-}
-
+} 
+  .drop_menu.active {
+    display: block;
+  }
 .second-banner .card {
   display: flex;
   background-color: #fff;
