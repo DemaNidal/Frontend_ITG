@@ -448,3 +448,36 @@ footer {
 #pagination-container button.active {
   background-color: #ccc; /* Change this to the desired color */
 }
+
+.container-star{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.container-star .star-widget input{
+  display: none;
+  
+
+}
+.star-widget label{
+  font-size: 15px;
+  transition: all 0.2 ease;
+  float: right;
+  padding: 3px;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~label{
+  font-size: 15px;
+  color: #fd4;
+}
+input:checked ~ label {
+  font-size: 15px;
+  color: #fd4;
+}
+input#rate-5:checked ~ label {
+  color: #fe7;
+  text-shadow: 0 0 20px rgb(239, 175, 127);
+}
