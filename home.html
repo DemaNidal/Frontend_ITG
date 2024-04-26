@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <script
       src="https://kit.fontawesome.com/1fc1497e59.js"
       crossorigin="anonymous"
@@ -147,7 +149,224 @@
   </b>
   </div>
 </div>
+<div class="centercon">
+  <div class="cont">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">  "ألف ليلة وليلة"<br>
+           - غير معروف: "إن الصبر مفتاح الفرج، والسعي في طلب الأمر مطلوب"</div>
+        <div class="swiper-slide">"الأسود يليق بك" - أحلام مستغانمي: "الصمت في بعض الأحيان، هو أعظم حكمة"</div>
+        <div class="swiper-slide">"ثلاثية غرناطة" - رضوى عاشور: "ليس للإنسان أن ينسى، ولكنه يستطيع أن يتناسى"</div>
+        <div class="swiper-slide">"أولاد حارتنا" - نجيب محفوظ: "كل الحكايات تبدأ من الحارة وكل الحكايات تنتهي إليها"</div>
+        <div class="swiper-slide">"الأيام" - طه حسين: "مهما طال الزمن، يبقى الوطن هو القلب النابض"</div>
+        <div class="swiper-slide">"العمدة عزمي" - حلمي شفيق: "في القدر طريق، وفي النفس قوة"</div>
+        <div class="swiper-slide">"الرجال من الشمس" - غسان كنفاني: "لا يُحارب الإنسان من أجل النصر بل من أجل الحق"</div>
+        <div class="swiper-slide">"الطريق إلى القدس" - يوسف زيدان: "الحب ليس له دين، ولا وطن، ولا لون، إنه فقط شعور"</div>
+        <div class="swiper-slide">"ثلاثية غرناطة" - رضوى عاشور: "ليس للإنسان أن ينسى، ولكنه يستطيع أن يتناسى"</div>
+      </div>
+      
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup:3,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<div class="tabb">
+
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1">Name</div>
+      <div class="col col-2">Publish date</div>
+      <div class="col col-3">Price</div>
+      <div class="col col-4">rate</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">الأسود يليق بك</div>
+      <div class="col col-2" data-label="Publish date">2001</div>
+      <div class="col col-3" data-label="Price">$10</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">To Kill a Mockingbird</div>
+      <div class="col col-2" data-label="Publish date">1960</div>
+      <div class="col col-3" data-label="Price">$12</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">الرجال من الشمس</div>
+      <div class="col col-2" data-label="Publish date">1962</div>
+      <div class="col col-3" data-label="Price">$15</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">ثلاثية غرناطة</div>
+      <div class="col col-2" data-label="Publish date">1994</div>
+      <div class="col col-3" data-label="Price">$15</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">أولاد حارتنا</div>
+      <div class="col col-2" data-label="Publish date">1959</div>
+      <div class="col col-3" data-label="Price">$18</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">العمدة عزمي</div>
+      <div class="col col-2" data-label="Publish date">1977</div>
+      <div class="col col-3" data-label="Price">$15</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">The Catcher in the Rye</div>
+      <div class="col col-2" data-label="Publish date">1951</div>
+      <div class="col col-3" data-label="Price">$15</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">The Great Gatsby</div>
+      <div class="col col-2" data-label="Publish date">1925</div>
+      <div class="col col-3" data-label="Price">$9</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">Les Misérables</div>
+      <div class="col col-2" data-label="Publish date">1862</div>
+      <div class="col col-3" data-label="Price">$7</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">أنا كنت شماساً</div>
+      <div class="col col-2" data-label="Publish date">2004</div>
+      <div class="col col-3" data-label="Price">$15</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">ثلاثية القاهرة</div>
+      <div class="col col-2" data-label="Publish date">1956</div>
+      <div class="col col-3" data-label="Price">$16</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">One Hundred Years of Solitude</div>
+      <div class="col col-2" data-label="Publish date">1967</div>
+      <div class="col col-3" data-label="Price">$15</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">أرض النفاق</div>
+      <div class="col col-2" data-label="Publish date">1946</div>
+      <div class="col col-3" data-label="Price">$11</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">Anna Karenina" by Leo Tolstoy</div>
+      <div class="col col-2" data-label="Publish date">1878</div>
+      <div class="col col-3" data-label="Price">$10</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">الطريق إلى القدس</div>
+      <div class="col col-2" data-label="Publish date">2008</div>
+      <div class="col col-3" data-label="Price">$20</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">Crime and Punishment</div>
+      <div class="col col-2" data-label="Publish date">1866</div>
+      <div class="col col-3" data-label="Price">$12</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">في قلبي انثى عبرية</div>
+      <div class="col col-2" data-label="Publish date">1994</div>
+      <div class="col col-3" data-label="Price">$15</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Name">اين المفر</div>
+      <div class="col col-2" data-label="Publish date">1994</div>
+      <div class="col col-3" data-label="Price">$15</div>
+      <div class="col col-4" data-label="rate">Pending</div>
+    </li>
+
+  </ul>
+  <div id="pagination-container"></div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const table = document.querySelector('.responsive-table');
+  const tableRows = table.querySelectorAll('.table-row');
+  const paginationContainer = document.getElementById('pagination-container');
+
+  const itemsPerPage = 5;
+  let currentPage = 1;
+
+  function displayRows(startIndex, endIndex) {
+    tableRows.forEach((row, index) => {
+      if (index >= startIndex && index < endIndex) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  function setupPagination() {
+    const pageCount = Math.ceil(tableRows.length / itemsPerPage);
+    const paginationButtons = [];
+
+    for (let i = 1; i <= pageCount; i++) {
+      const button = document.createElement('button');
+      button.innerText = i;
+      button.addEventListener('click', () => {
+        currentPage = i;
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        displayRows(startIndex, endIndex);
+
+        
+        paginationButtons.forEach(btn => {
+          btn.classList.remove('active');
+        });
+      
+        button.classList.add('active');
+      });
+      paginationButtons.push(button);
+    }
+
+    paginationContainer.innerHTML = '';
+    paginationButtons.forEach(button => {
+      paginationContainer.appendChild(button);
+    });
+  }
+
+  setupPagination();
+  displayRows(0, itemsPerPage);
+});
+
+  </script>
     <div class="contact-us">
       <div class="content">
         <div class="image-box">
