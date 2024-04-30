@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="./assets/icons/logo.png" />
+    <link rel="stylesheet" href="./styles/book.css" />
+
+    <title>Book</title>
+
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a class="logo" href="#"
+            ><img
+              src="./assets/icons/logo.png"
+              alt="Logo"
+              width="50px"
+              height="50px"
+          /></a>
+        </div>
+        <ul class="nav">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="bars" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="drop_menu">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </div>
+    </header>
+    <div class="container" style="padding: 2%">
+      <div class="row" id="search">
+        <form
+          id="search-form"
+          action=""
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group col-xs-9">
+            <input class="form-control" type="text" placeholder="Search" />
+          </div>
+          <div class="form-group col-xs-3">
+            <button type="submit" class="btn btn-block btn-primary">
+              Search
+            </button>
+          </div>
+          
+        </form>
+      </div>
+      <div class="row" id="filter">
+        <form>
+          <div class="form-group col-sm-3 col-xs-6">
+            <select data-filter="type" class="filter-type filter form-control">
+              <option value="">Select Type</option>
+              <option value="">Show All</option>
+              <option value="">Historical</option>
+              <option value="">Electric</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-3 col-xs-6">
+            <select data-filter="price" class="filter-price filter form-control">
+              <option value="">Select Price Range</option>
+                <option value="0-1000">$0 - $1,000</option>
+                <option value="1001-2000">$1,001 - $2,000</option>
+                <option value="2001-3000">$2,001 - $3,000</option>
+                <option value="3001-5000">$3,001 - $5,000</option>
+                <option value="5001">$5,001+</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-3 col-xs-6">
+  <label>Filter by Type:</label><br>
+  <input type="checkbox" class="filter-type filter form-check-input" value="Historical"> Historical<br>
+  <input type="checkbox" class="filter-type filter form-check-input" value="Electric"> Electric<br>
+</div>
+        </form>
+      </div>
+      <div class="row" id="products"></div>
+    </div>
+
+    <footer>
+      <div>
+        <div>
+          <span>
+            <img
+              src="./assets/icons/logo.png"
+              alt="logo"
+              width="50"
+              ;
+              height="50"
+              ;
+            />
+          </span>
+          <p>
+            Explore the world of books with our extensive library collection.
+            Discover new stories, expand your knowledge, and embark on literary
+            adventures.
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+      </div>
+      <div style="text-align: center">
+        <p>&copy; 2024 Book Library. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./JavaScript/book.js"></script>
+
+    
+  </body>
+</html>
