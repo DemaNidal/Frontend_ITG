@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="./assets/icons/logo.png" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script
+        src="https://kit.fontawesome.com/1fc1497e59.js"
+        crossorigin="anonymous"
+      ></script>
+      <link rel="shortcut icon" type="x-icon" href="./assets/icons/logo.png" />
+      <title>Book Details</title>
+      <link rel="stylesheet" href="./styles/productDetails.css" />
+
+    <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  
+  width: 100%;
+  
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.logo {
+  margin-top: 2vw;
+}
+header li {
+  margin-left: 2vw;
+  margin-top: 2vw;
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 1.2rem;
+}
+.drop_menu a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 1.2rem;
+}
+header a:hover {
+  color: #c47c7c;
+}
+.navbar .nav {
+  display: flex;
+  gap: 2rem;
+}
+.bars {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.drop_menu {
+  position: absolute;
+  right: 2rem;
+  left: 2rem;
+  width: unset;
+  /* background:rgba(255, 255, 255, 0.1); */
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+  z-index: 1;
+}
+.drop_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .nav {
+    display: none;
+  }
+  .navbar .bars {
+    display: block;
+    position: absolute;
+    right: 1rem;
+  }
+  .drop_menu {
+    display: block;
+  }
+  .hero-text {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+  }
+}
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+margin-top: auto;
+}
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a class="logo" href="#"
+          ><img
+            src="./assets/icons/logo.png"
+            alt="Logo"
+            width="50px"
+            height="50px"
+        /></a>
+      </div>
+      <ul class="nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+      <div class="bars" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="drop_menu">
+      <li><a href="./home.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+  </div>
+    
+  </header>
+    <main>
+
+      <section>
+        <div class="container flex">
+          <div class="left">
+            <div class="main_image">
+              <img src="./assets/images/image.png" class="slide" style="height: 450px;">
+            </div>
+            <div class="option flex">
+              <img src="./assets/images/image.png" onclick="img('./assets/images/image.png')">
+              <img src="./assets/images/image.png" onclick="img('./assets/images/image.png')">
+              <img src="./assets/images/image.png" onclick="img('./assets/images/image.png')">
+              <img src="./assets/images/image.png" onclick="img('./assets/images/image.png')">
+              <img src="./assets/images/image.png" onclick="img('./assets/images/image.png')">
+              <img src="./assets/images/feqalbi.jpg" onclick="img('./assets/images/feqalbi.jpg')">
+            </div>
+          </div>
+          <div class="right">
+            <h3>Beats Solo3 Wireless</h3>
+            <h4> <small>$</small>999.99 </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            
+            <h5>Number</h5>
+            <div class="add flex1">
+              <span>-</span>
+              <label>1</label>
+              <span>+</span>
+            </div>
+    
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div>
+          <span>
+            <img
+              src="./assets/icons/logo.png"
+              alt="logo"
+              width="50"
+              ;
+              height="50"
+              ;
+            />
+          </span>
+          <p>
+            Explore the world of books with our extensive library collection.
+            Discover new stories, expand your knowledge, and embark on literary
+            adventures.
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+      </div>
+      <div style="text-align: center">
+        <p>&copy; 2024 Book Library. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="./JavaScript/script.js"></script>
+    <script>
+      function img(anything) {
+        document.querySelector('.slide').src = anything;
+      }
+  
+      function change(change) {
+        const line = document.querySelector('.home');
+        line.style.background = change;
+      }
+    </script>
+</body>
+</html>
